@@ -16,6 +16,11 @@ layout: blog
                     {% endif %}
                 </a>
             </h2>
+
+            {% if post.data.thumbnail %}
+                {{ post.data.thumbnail }}ddd
+            {% endif %}
+
             <p class="text-base leading-6 text-gray-500 mb-3">
                 <time>
                     {{ post.date | readableDate }}
