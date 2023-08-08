@@ -24,12 +24,15 @@ collections:
       - { label: "Author", name: "author", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Body", name: "body", widget: "markdown" }
-      - widget: select
-        label: "tags"
+      - label: "Featured Image"
+        name: "thumbnail"
+        widget: "image"
+      - label: "Tags"
         name: "tags"
+        widget: select
         multiple: true
         create: true
-        options: ["Tags", "created", "from", "config.yml"]
+        options: ["Sculpture", "Mixed media", "Digital art", "Photograph", "Painting"]
   - label: "Settings"
     name: "settings"
     editor:
